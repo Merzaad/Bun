@@ -2,12 +2,11 @@
   "name": "learning_bun",
   "module": "index.ts",
   "type": "module",
-  "scripts": {
-    "start": "bun index.ts",
-    "build": "bun build index.ts --outfile=server.js"
-  },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "dev": "bun --hot index.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
